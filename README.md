@@ -16,3 +16,5 @@ Currently, two official plugins are available:
 # VILLAREAL, AUBREY MAE A.
 
 # BSIT31A1
+
+# https://cedrick-calculator.netlify.app/
