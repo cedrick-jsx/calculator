@@ -81,7 +81,7 @@ const Calcu = () => {
               backgroundColor: "#86A3B8",
               outline: "2px solid black",
               flex:
-                numbers === 0 || numbers === "AC" ? "0 0 200px" : "1 0 auto",
+                numbers === "=" || numbers === "AC" ? "0 0 200px" : "1 0 auto",
             }}
             onClick={() => {
               if (
