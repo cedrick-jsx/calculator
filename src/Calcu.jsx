@@ -78,7 +78,6 @@ const Calcu = () => {
               fontWeight: "bold",
               width: "80px",
               height: "60px",
-              backgroundColor: "#86A3B8",
               outline: "2px solid black",
               flex:
                 numbers === "=" || numbers === "AC" ? "0 0 200px" : "1 0 auto",
@@ -182,9 +181,12 @@ const Calcu = () => {
                   answers: "",
                   done: false,
                 });
-              else if (numbers === "C")
-                setValues({ ...values, active: values.active.slice(0, -1) });
-              else {
+              else if (numbers === "C") {
+                if (values.active.length > 1)
+                  setValues({ ...values, active: values.active.slice(0, -1) });
+                else if (values.active.length === 1)
+                  setValues({ ...values, active: 0 });
+              } else {
                 if (
                   (values.done === true &&
                     numbers !== "+" &&

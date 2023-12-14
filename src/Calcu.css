@@ -23,5 +23,15 @@ body {
 }
 
 button {
-  background: "#86A3B8";
+  cursor: pointer;
+  background: #86a3b8;
+  transition: 300ms;
+}
+
+button:hover {
+  background: #e26ee5;
+}
+
+button:active:hover {
+  transform: scale(0.9);
 }
